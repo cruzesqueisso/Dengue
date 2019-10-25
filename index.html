@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Dengue">
+		<meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta name="author" content="Vinícius Borges França">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Dengue</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+		<div id="container-app" class="container-fluid">
+			<div class="row">
+				<div class="col-3 pt-3">
+					<div class="container">
+						<span class="float-left">Movimentos: <span id="contador_movimentos">0</span></span>
+						<span class="float-right">Focos de dengue: <span id="contador_focos_dengue"></span></span>
+						<br>
+						<div class="responsive-table mt-3" style="visibility:hidden;">
+							<h3>Estatística da busca A* com a heurística de Manhattan</h3>
+							<table class="table" id="tabela-custo">
+								<thead>
+									<tr><td>Passos</td><td>F(n)</td><td>G(n)</td><td>H(n)</td></tr>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div id="botoes" class="row mt-5">
+						<div class="col-4 d-flex">
+						</div>
+						<div class="col-4 d-flex justify-content-center">
+							<button id="btn-mover-acima" class="btn btn-primary rounded-circle m-1"><i class="fas fa-arrow-up"></i></button>
+						</div>
+						<div class="col-4">
+						</div>
+						<div class="col-12 d-flex justify-content-center">
+							<button id="btn-mover-esquerda" class="btn btn-primary rounded-circle m-1"><i class="fas fa-arrow-left"></i></button>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<button id="btn-mover-direita" class="btn btn-primary rounded-circle m-1"><i class="fas fa-arrow-right"></i></button>
+						</div>
+						<div class="col-4">
+						</div>
+						<div class="col-4 d-flex justify-content-center">
+							<button id="btn-mover-abaixo" class="btn btn-primary rounded-circle m-1"><i class="fas fa-arrow-down"></i></button>
+						</div>
+					</div>
+				</div>
+				<div id="container-mapa" class="col-9 text-center pt-3"></div>
+			</div>
+		</div>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/sweetalert.min.js"></script>
+		<script src="js/p5.min.js"></script>
+		<script src="js/javascript.js"></script>
+	</body>
+</html>
